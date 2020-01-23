@@ -11,6 +11,12 @@ namespace Array2
 
             int n = Convert.ToInt32(Console.ReadLine());
 
+            if (n <= 0)
+            {
+                Console.WriteLine("Error: n<=0");
+                return;
+            }
+
             for(int i = 1; i <= n; i++)
             {
                 powers.Add((Int64)Math.Pow(2, i));
